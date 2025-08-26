@@ -39,5 +39,6 @@ def health():
     return jsonify({"status": "ok"})
 
 if __name__ == "__main__":
-    # Run on 0.0.0.0 for cloud deployment
-    app.run(host="0.0.0.0", port=8080, debug=False)
+    import os
+    port = int(os.environ.get("PORT", 8080))  # Render provides $PORT
+    app.run(host="0.0.0.0", port=port, debug=False)
