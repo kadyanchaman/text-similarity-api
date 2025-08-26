@@ -1,6 +1,6 @@
 flask
 gunicorn
 torch
-sentence-transformers==2.2.2
-transformers<5.0.0
+sentence-transformers
+transformers
 scikit-learn
