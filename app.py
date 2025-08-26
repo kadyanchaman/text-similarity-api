@@ -6,7 +6,7 @@ import torch
 app = Flask(__name__)
 
 # Load the model once at startup
-model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+model = SentenceTransformer("sentence-transformers/paraphrase-MiniLM-L3-v2")
 
 def compute_similarity(text1, text2):
     # Encode sentences into embeddings
